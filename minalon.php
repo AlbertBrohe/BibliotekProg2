@@ -72,7 +72,7 @@ $past_loans_result = $conn->query($past_loans_sql);
             <h2> Dina Nuvarande Lån</h2>
             <div class="current-loans">
             <?php
-            if ($current_loans_result->num_rows > 0) {
+            if ($current_loans_result->num_rows > 0) { //Visar informationen för nuvarande lån
                 while ($row = $current_loans_result->fetch_assoc()) {
                     $id = $row['bok_id'];
                     $today = date('Y-m-d');
@@ -98,7 +98,7 @@ $past_loans_result = $conn->query($past_loans_sql);
                     <?php
                 }
             } else {
-                echo "<h4>Du har inga nuvarande lån.</h4>";
+                echo "<h4>Du har inga nuvarande lån.</h4>"; //om personen int ehar nuvarande lån
             }
             ?>
             </div>
