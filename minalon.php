@@ -108,7 +108,7 @@ $past_loans_result = $conn->query($past_loans_sql);
             <div class="past-loans">
             <?php
             if ($past_loans_result->num_rows > 0) {
-                while ($row = $past_loans_result->fetch_assoc()) {
+                while ($row = $past_loans_result->fetch_assoc()) { //skriver ut informationen om tidigare lån
                     $date = date("Y-m-d");
                     ?>
 
@@ -124,7 +124,7 @@ $past_loans_result = $conn->query($past_loans_sql);
                     <?php
                 }
             } else {
-                echo "<h4>Du har inga tidigare lån.</h4>";
+                echo "<h4>Du har inga tidigare lån.</h4>"; //om personen inte lånat förut
             }
             ?>
             </div>
