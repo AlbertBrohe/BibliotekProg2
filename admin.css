@@ -1,0 +1,108 @@
+:root{
+    --primary: #F48E29;
+    --secondary: #737373;
+    --accent: #CC4043;
+    --background: white;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Playfair Display', sans-serif;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--background);
+}
+
+.navbar{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    height: 12dvh;
+    width: 100%;
+    padding: 3dvh;
+    background: rgb(115,115,115);
+    font-family: 'Playfair Display', sans-serif;
+}
+
+.knappar{
+    display: flex;
+    gap: 1dvh;
+    align-items: center;
+    height: 10dvh;
+    width: auto;
+    color: var(--primary);
+}
+
+.knapp{
+    display: grid;
+    place-items: center;
+    height: 8dvh;
+    width: 20dvh;
+    cursor: pointer;
+    border-radius: 2dvh;
+    transition: all .2s ease;
+}
+
+.hover:hover{
+    text-decoration: underline;
+}
+
+.main{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    height: calc(100dvh - 12dvh);
+    width: 90dvw;
+    color: white;
+}
+
+.container{
+    display: grid;
+    place-items: center;
+    height: 85dvh;
+    width: 30dvw;
+    box-shadow: .5dvh .5dvh 1.5dvh .25dvh rgba(0, 0, 0, .25);
+    background-color: var(--background);
+    padding: 5dvh;
+}
+
+.container form{
+    display: flex;
+    flex-direction: column;
+    gap: 1dvh;
+    color: black;
+    height: 100%;
+    width: 100%;
+    font-family: 'Raleway', sans-serif;
+}
+
+.container h2{
+    color: var(--primary);
+}
+
+button{
+    cursor: pointer;
+    border: none;
+    transition: .1s all ease;
+    border-radius: .5dvh;
+}
+
+button:hover{
+    color: white;
+    background-color: var(--primary);
+}
+
+input[type="text"],
+input[type="number"],
+input[id="bild"],
+button{
+    padding: 1dvh;
+    font-family: 'Raleway', sans-serif;
+}

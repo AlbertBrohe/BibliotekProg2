@@ -1,0 +1,167 @@
+:root{
+    --primary: #F48E29;
+    --secondary: #737373;
+    --accent: #CC4043;
+    --background: white;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--background);
+    overflow: hidden;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 12dvh;
+    width: 100%;
+    padding: 3dvh;
+    background: rgb(115,115,115);
+    font-family: 'Playfair Display', sans-serif;
+}
+
+.titel{
+    display: grid;
+    place-items: center;
+    height: 10dvh;
+    width: auto;
+    color: var(--primary);
+    cursor: pointer;
+}
+
+.knappar{
+    display: flex;
+    gap: 1dvh;
+    align-items: center;
+    height: 10dvh;
+    width: auto;
+    color: var(--primary);
+}
+
+.sok{
+    display: grid;
+    place-items: center;
+    height: 8dvh;
+    width: 8dvh;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: all .2s ease;
+    margin-right: 1dvh;
+}
+
+.knapp{
+    display: grid;
+    place-items: center;
+    height: 8dvh;
+    width: 20dvh;
+    cursor: pointer;
+    border-radius: 2dvh;
+    transition: all .2s ease;
+}
+
+.hover:hover{
+    text-decoration: underline;
+}
+
+.main{
+    display: flex;
+    gap: 5dvh;
+    margin-top: 2dvh;
+    height: 88dvh;
+    width: 100%;
+    font-family: 'Raleway', sans-serif;
+}
+
+.venster,
+.hoger{
+    display: flex;
+    flex-direction: column;
+    width: 49%;
+}
+
+.venster h2,
+.hoger h2,
+h4{
+    margin-left: 2.5dvh;
+}
+
+h4{
+    color: rgb(115,115,115);
+}
+
+.current-loans,
+.past-loans{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    min-height: 65dvh;
+    overflow-y: scroll;
+    margin-bottom: 2dvh;
+}
+
+/*------------------------------------------*/
+
+.holder{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1dvh;
+    height: 78dvh;
+    width: 22dvw;
+    box-shadow: .5dvh .5dvh 1.5dvh .25dvh rgba(0, 0, 0, .25);
+    margin: 2dvh;
+}
+
+.holder img{
+    height: 70%;
+    width: 90%;
+}
+
+.holder p{
+    margin-left: none;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    gap: 1dvh;
+    width: 85%;
+}
+
+.barcode{
+    position: absolute;
+    bottom: .5dvh;
+    width: 85%;
+    text-align: left;
+    font-size: 50%;
+    color: rgb(115,115,115);
+}
+
+input[type="submit"]{
+    width: 18.7dvw;
+    cursor: pointer;
+    background-color: white;
+    border: 1px solid rgb(115,115,115);
+    color: black;
+    transition: all ease .2s;
+    padding: 1dvh;
+}
+
+input[type="submit"]:hover{
+    background: var(--primary);
+    border: none;
+    color: white;
+}
+/*------------------------------------*/

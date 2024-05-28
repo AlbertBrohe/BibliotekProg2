@@ -1,0 +1,84 @@
+:root{
+    --primary: #F48E29;
+    --secondary: #75EBEF;
+    --accent: #CC4043;
+    --background: #C5C4C0;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100dvh;
+    background-image: url(pics/Bibliotek.png);
+    background-size: cover;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 12dvh;
+    background: linear-gradient(rgba(0, 0, 0, .6) 95%, transparent);
+    padding: 3dvh;
+    font-family: 'Playfair Display', sans-serif;
+}
+
+.titel{
+    display: grid;
+    place-items: center;
+    height: 10dvh;
+    width: auto;
+    color: var(--primary);
+}
+
+.knappar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10dvh;
+    width: auto;
+    color: var(--primary);
+}
+
+.sok{
+    display: grid;
+    place-items: center;
+    height: 8dvh;
+    width: 8dvh;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: all .2s ease;
+    margin-right: 1dvh;
+}
+
+.login{
+    display: grid;
+    place-items: center;
+    height: 8dvh;
+    width: 20dvh;
+    cursor: pointer;
+    border-radius: 2dvh;
+    transition: all .2s ease;
+}
+
+.hover:hover{
+    text-decoration: underline;
+}
+
+.main{
+    display: grid;
+    place-items: center;
+    color: white;
+    height: 88dvh;
+    width: 100%;
+    letter-spacing: 1dvh;
+    background: radial-gradient(rgba(0, 0, 0, .6), transparent);
+    font-size: 12dvh;
+    font-family: 'Raleway', sans-serif;
+}

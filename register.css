@@ -1,0 +1,69 @@
+:root{
+    --primary: #F48E29;
+    --secondary: #737373;
+    --accent: #CC4043;
+    --background: white;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.hem{
+    position: absolute;
+    top: 1dvh;
+    left: 1dvh;
+}
+.hemknapp{
+    position: absolute;
+    top: 1dvh;
+    left: 1dvh;
+    background-color: #F48E29;
+    cursor: pointer;
+}
+body{
+    display: grid;
+    place-items: center;
+    background-color: var(--background);
+    gap: 5dvh;
+    height: 100dvh;
+    background-color: rgb(115,115,115);
+}
+.container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    height: 55dvh;
+    box-shadow: .5dvh .5dvh 1.5dvh .25dvh rgba(0, 0, 0, .25);
+    padding:5dvh;
+    background-color: white;
+    font-family: 'Playfair Display', sans-serif;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 40dvh;
+    width: 35dvw;
+}
+
+.button{
+    border: 0;
+    background-color: var(--primary);
+    padding: 1dvh;
+    border-radius: .3dvh;
+    width: 100%;
+    cursor: pointer;
+    font-family: 'Raleway', sans-serif;
+}
+
+.inputfält{
+    padding: 1dvh;
+    font-family: 'Raleway', sans-serif;
+}
+p{
+    font-size: 1.5dvh;
+}

@@ -1,0 +1,135 @@
+:root{
+    --primary: #F48E29;
+    --secondary: #737373;
+    --accent: #CC4043;
+    --background: white;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--background);
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 12dvh;
+    width: 100%;
+    padding: 3dvh;
+    background: rgb(115,115,115);
+    font-family: 'Playfair Display', sans-serif;
+}
+
+.titel{
+    display: grid;
+    place-items: center;
+    height: 10dvh;
+    width: auto;
+    color: var(--primary);
+}
+
+.knappar{
+    display: flex;
+    gap: 1dvh;
+    align-items: center;
+    height: 10dvh;
+    width: auto;
+    color: var(--primary);
+}
+
+.sok{
+    display: grid;
+    place-items: center;
+    height: 8dvh;
+    width: 8dvh;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: all .2s ease;
+    margin-right: 1dvh;
+}
+
+.knapp{
+    display: grid;
+    place-items: center;
+    height: 8dvh;
+    width: 20dvh;
+    cursor: pointer;
+    border-radius: 2dvh;
+    transition: all .2s ease;
+}
+
+.hover:hover{
+    text-decoration: underline;
+}
+
+.topmain{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 2dvh;
+    height: 4dvh;
+    width: calc(100% - 5dvw);
+}
+
+.botmain{
+    display: grid;
+    grid-template-columns: repeat(4,1fr)
+}
+
+.holder{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1dvh;
+    height: 80dvh;
+    width: 22dvw;
+    box-shadow: .5dvh .5dvh 1.5dvh .25dvh rgba(0, 0, 0, .25);
+    margin: 2dvh;
+}
+
+.holder img{
+    width: 85%;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    gap: 1dvh;
+    width: 85%;
+}
+
+.barcode{
+    position: absolute;
+    bottom: .5dvh;
+    width: 85%;
+    text-align: left;
+    font-size: 50%;
+    color: white;
+}
+
+input[type="submit"]{
+    width: 18.7dvw;
+    cursor: pointer;
+    background-color: white;
+    border: 1px solid rgb(115,115,115);
+    color: rgb(115,115,115);
+    transition: all ease .2s;
+}
+
+input[type="submit"]:hover{
+    background: var(--primary);
+    border: none;
+    color: white;
+}
